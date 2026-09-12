@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+
+      <button class="btn btn-light" onclick="clearDisplay()">C</button>
+      <button class="btn btn-light" onclick="backspace()">⌫</button>
+      <button class="btn btn-orange" onclick="reciprocal()">1/x</button>
+      <button class="btn btn-orange" onclick="appendOperator('/')">/</button>
+      <button class="btn btn-orange" onclick="square()">x²</button>
+      <button class="btn btn-orange" onclick="sqrt()">√</button>
+      <button class="btn btn-orange" onclick="percentage()">%</button>
+      <button class="btn btn-orange" onclick="appendOperator('*')">*</button>
+      <button class="btn btn-black" onclick="appendNum('1')">1</button>
+      <button class="btn btn-black" onclick="appendNum('2')">2</button>
+      <button class="btn btn-black" onclick="appendNum('3')">3</button>
+      <button class="btn btn-orange" onclick="appendOperator('-')">-</button>
+      <button class="btn btn-black" onclick="appendNum('4')">4</button>
+      <button class="btn btn-black" onclick="appendNum('5')">5</button>
+      <button class="btn btn-black" onclick="appendNum('6')">6</button>
+      <button class="btn btn-orange" onclick="appendOperator('+')">+</button>
+      <button class="btn btn-black" onclick="appendNum('7')">7</button>
+      <button class="btn btn-black" onclick="appendNum('8')">8</button>
+      <button class="btn btn-black" onclick="appendNum('9')">9</button>
+      <button class="btn btn-orange" onclick="calculate()">=</button>
+      <button class="btn btn-black" onclick="toggleSign()">±</button>
+      <button class="btn btn-black" onclick="appendNum('0')">0</button>
+      <button class="btn btn-black" onclick="calculate()">=</button>
+      <div class="empty-slot"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
